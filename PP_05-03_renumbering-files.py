@@ -29,7 +29,6 @@ if extension[0] != '.':
 # This is a basic renumbering program. 
 # It assumes that all files in the folder have the same base like "spam001.txt", "spam002.txt", where the base is "spam"
 # TODO: Make it more roboust, find all all different bases and renumber them properly 
-#pattern = re.compile(r'spam(\d{3}).txt')
 #pattern = re.compile(rf'^spam(\d{{3}}){re.escape(extension)}$')
 
 pattern = re.compile(r"^(spam)(\d+)(\.txt)$")
